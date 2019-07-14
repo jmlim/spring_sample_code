@@ -35,9 +35,10 @@
 
 프로젝트를 한개 더 만듬. (springbootactuatormonitor 라고 만들었음)
 
- https://github.com/codecentric/spring-boot-admin 
-### 스프링 부트 Actuator UI 제공 어드민 서버 설정
 
+### 스프링 부트 Actuator UI 제공 어드민 서버 설정
+ - https://github.com/codecentric/spring-boot-admin 
+ - https://github.com/jmlim/spring_sample_code/tree/master/sprinbootactuatormonitor (아래 설정 적용한 프로젝트)
 ```groovy
  implementation 'de.codecentric:spring-boot-admin-starter-server:2.0.1'
 ```
@@ -82,10 +83,10 @@ public class Application {
 ```
  
 ### 양쪽 서버 전부 실행 후 acturator를 설정한 서버의 정보가 admin 서버에서 UI로 잘 나오는지 확인한다.
-<img src="/spring-boot-acturator-admin.png" />
+<img src="spring-boot-acturator-admin.png" />
 
 #### 디테일한 정보 확인
-<img src="/spring-boot-acturator-admin-detail.png" />
+<img src="spring-boot-acturator-admin-detail.png" />
  
  
  > 당연한 얘기지만 보안적으로 민감한 정보들이 모니터링 되므로 어드민 서버, 
